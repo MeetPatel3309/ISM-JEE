@@ -40,6 +40,8 @@ public class EditUserFilterController implements Filter{
 		
 		boolean isError = false;
 		
+		//This validation is for Edit the user data
+//		(You can also write this validation in EditUserController2)
 		
 		if (firstName == null || firstName.trim().length() == 0) 
 		{

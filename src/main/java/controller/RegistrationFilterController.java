@@ -22,7 +22,6 @@ public class RegistrationFilterController implements Filter {
 	}
 	
 	
-
 	@Override
 	public void doFilter(ServletRequest req, ServletResponse resp, FilterChain chain)
 			throws IOException, ServletException {
@@ -43,7 +42,8 @@ public class RegistrationFilterController implements Filter {
 		
 		boolean isError = false;
 		
-		
+		//This validation is for registration data
+//		(You can also write in RegistrationController)
 		if (firstName == null || firstName.trim().length() == 0) 
 		{
 			isError = true;
